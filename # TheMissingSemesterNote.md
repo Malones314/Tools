@@ -6,6 +6,19 @@
 - 上一个目录(非上一层目录)
 cd sys 访问内核
 
+ls -a # 显示所有文件(包括隐藏文件)
+ls -r # 逆序显示所有文件
+ls -R # 显示所有文件及其子文件
+ls -l # 显示⽂件详细属性 
+ls -f # 显示⽂件类型，后缀 
+
+pwd # 显示当前路径
+
+cat fileName # 文本输出
+tac fileName # 从最后一行开始往前查看文本内容
+
+grep xxx fileName.txt # 在fileName.txt文件中查找xxx
+
 pipe： a|b  取a侧的输出作为b侧的输入
 
 mv path1(old path) path2( new path) 重命名或移动文件
