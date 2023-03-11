@@ -52,7 +52,7 @@ main.o : main.c
     gcc main.c -c -g -Wall -o main.o
 test1.o: test1.c
     gcc test1.c -c -g -Wall -o test1.o
-test2.0: test2.c
+test2.o: test2.c
     gcc test1.c -c -g -Wall -o test2.o
 
 clean:
@@ -71,7 +71,7 @@ main.o : main.c
     $(CC) main.c $(CFLAGS) -o main.o
 test1.o: test1.c
     $(CC) test1.c $(CFLAGS) -o test1.o
-test2.0: test2.c
+test2.o: test2.c
     $(CC) test1.c $(CFLAGS) -o test2.o
 clean:
     RM *.o test -r  #RM 默认为 rm - f
@@ -88,7 +88,7 @@ main.o : main.c
     $(CC) $^ $(CFLAGS) -o $@
 test1.o: test1.c
     $(CC) $^ $(CFLAGS) -o $@
-test2.0: test2.c
+test2.o: test2.c
     $(CC) $^ $(CFLAGS) -o $@
 clean:
     RM *.o test -r  #RM 默认为 rm - f
